@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int q = sc.nextInt();
+        for(int j=1; j<=q; j++){
+           int a = sc.nextInt();
+           int b = sc.nextInt();
+           int n = sc.nextInt();
+           StringBuilder output = new StringBuilder();
+           int sum = a;
+           int term = b;
+           for(int i=0; i<n; i++){
+            sum += term;
+            output.append(sum);
+            if(i<n-1){
+                 output.append(" ");
+             }
+             term *=2;
+           } 
+           System.out.println(output);
+        }
+        sc.close();
+    }
+}
