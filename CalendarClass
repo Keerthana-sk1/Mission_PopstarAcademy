@@ -1,0 +1,15 @@
+public static String findDay(int month, int day, int year) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month-1, day);
+        String dayName = c.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.ENGLISH);
+        return dayName.toUpperCase();
+         /*
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, month-1);
+        c.set(Calendar.DAY_OF_MONTH, day);
+        String days[] = {"","SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"};
+        int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+        return days[dayOfWeek];
+    }*/
+    
+    }
