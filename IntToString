@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        String result = Integer.toString(input);
+        System.out.println(result instanceof String? "Good job":"Wrong answer");
+        sc.close();
+    }
+}
